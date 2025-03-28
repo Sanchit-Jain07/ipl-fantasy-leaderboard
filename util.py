@@ -127,7 +127,7 @@ NAME_MAP_3 = {
     "Heinrich Klaasen": ["H Klaasen", "Klaasen"],
     "Ajinkya Rahane": ["A Rahane", "Rahane"],
     "Philip Salt": ["P Salt", "Phil Salt", "Salt"],
-    "Varun Chakravarthy": ["V Chakravarthy", "Varun"],
+    "Varun Chakaravarthy": ["V Chakaravarthy", "Varun"],
     "Josh Hazlewood": ["J Hazlewood", "Hazlewood"],
     "Khaleel Ahmed": ["K Ahmed", "Khaleel"],
     "Mohammed Siraj": ["M Siraj", "Siraj"],
