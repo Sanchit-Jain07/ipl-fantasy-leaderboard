@@ -292,26 +292,27 @@ def get_playing_players(match):
         all_players.extend(team)
     return all_players
 
-matches = get_matches()
-finished_matches = get_filtered_matches(matches)
-COMPLETED_MATCHES = []
-with open('completed_matches.txt', 'r') as f:
-    for line in f:
-        COMPLETED_MATCHES.append(line.strip())
+def update_leaderboard():
+    matches = get_matches()
+    finished_matches = get_filtered_matches(matches)
+    COMPLETED_MATCHES = []
+    with open('completed_matches.txt', 'r') as f:
+        for line in f:
+            COMPLETED_MATCHES.append(line.strip())
 
-for match in finished_matches:
-    link = get_scorecard_link(match)
-    if link in COMPLETED_MATCHES:
-        continue
-    scorecard = get_scorecard(match)
-    batting_points(scorecard)
-    bowling_points(scorecard)
-    fielding_points(scorecard)
-    COMPLETED_MATCHES.append(link)
+    for match in finished_matches:
+        link = get_scorecard_link(match)
+        if link in COMPLETED_MATCHES:
+            continue
+        scorecard = get_scorecard(match)
+        batting_points(scorecard)
+        bowling_points(scorecard)
+        fielding_points(scorecard)
+        COMPLETED_MATCHES.append(link)
 
-with open('completed_matches.txt', 'w') as f:
-    for match in COMPLETED_MATCHES:
-        f.write(match + '\n')
+    with open('completed_matches.txt', 'w') as f:
+        for match in COMPLETED_MATCHES:
+            f.write(match + '\n')
 
-with open('points.json', 'w') as f:
-    json.dump(PLAYER_POINTS, f)
+    with open('points.json', 'w') as f:
+        json.dump(PLAYER_POINTS, f)
