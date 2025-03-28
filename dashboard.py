@@ -2,6 +2,10 @@ import streamlit as st
 import json
 from util import SQUADS, D11_TEAMS, RESTRICTED_TEAMS
 import re
+from leaderboard import update_leaderboard
+
+update_leaderboard()
+
 # Load points data
 with open("points.json", "r") as f:
     points_data = json.load(f)
