@@ -169,7 +169,7 @@ SQUADS = {
         'Hardik Pandya',
         'Shreyas Iyer',
         'Riyan Parag',
-        'Varun Chakravarthy',
+        'Varun Chakaravarthy',
         'Josh Hazlewood',
         'Nitish Kumar Reddy',
         'Rahul Tripathi',
@@ -246,7 +246,7 @@ D11_TEAMS = {
             'Hardik Pandya',
             'Shreyas Iyer',
             'Riyan Parag',
-            'Varun Chakravarthy',
+            'Varun Chakaravarthy',
             'Josh Hazlewood'
         ],
         'Captain': 'Glenn Maxwell',
@@ -317,7 +317,7 @@ RESTRICTED_TEAMS = {
             'Hardik Pandya',
             'Axar Patel',
             'Josh Hazlewood',
-            'Varun Chakravarthy',
+            'Varun Chakaravarthy',
             'Khaleel Ahmed'
         ],
         'Captain': 'Shreyas Iyer',

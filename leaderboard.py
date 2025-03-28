@@ -6,8 +6,10 @@ import json
 BASE_URL = 'https://www.cricbuzz.com'
 URL = 'https://www.cricbuzz.com/cricket-series/9237/indian-premier-league-2025/matches'
 PLAYER_POINTS = {
-    player: 0 for player in NAME_MAP
 }
+
+with open('points.json', 'r') as f:
+    PLAYER_POINTS = json.load(f)
 
 def standardize_name(name, mapping):
     name = remove_captain_and_wk.sub(r'\1', name)
